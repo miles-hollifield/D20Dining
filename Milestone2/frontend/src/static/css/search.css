@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #290000;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Header Section */
+
+.search-header {
+    background-color: #290000;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #f7ce65;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #f7ce65; 
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.search-prompt {
+    font-size: 0.9rem;
+    color: #f7ce65;
+    margin-top: 0.5rem;
+}
+
+.search-btn-placeholder {
+    width: 24px;
+    height: 24px;
+    visibility: hidden;
+}
+
+/* Hidden for now - testing purposes */
+.search-list {
+    visibility: hidden;
+}
+
+/* Main Section */
+
+.main-content {
+    padding-bottom: 60px;
+}
+
+.search-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    background: #290000;
+    padding: 10px;
+    border-bottom: 1px solid #f7ce65;
+}
+
+.restaurant-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.restaurant-info {
+    flex-grow: 1;
+}
+
+.restaurant-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.restaurant-info p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.add-btn {
+    background: none;
+    border: none;
+    color: #f7ce65;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer.navbar {
+    background-color: #290000;
+    border-top: 2px solid #f7ce65;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 5px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        width: 90%;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D20 Dining - Favorites</title>
+    <!-- PWA Setup -->
+    <meta name="theme-color" content="#290000">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="/images/splashScreen.png">
+    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/favorites.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js" type="module"></script>
+    <script src="./js/favorite.js" type="module"></script>
+</head>
+<body>
+
+    <header class="container-fluid favorites-header d-flex justify-content-between align-items-center">
+        <h1 class="text-center flex-grow-1">Favorites</h1>
+    </header>    
+
+    <main role="main" class="main-content">
+        <ul class="favorites-list">
+            <!-- Dynamic favorite items will be appended here -->
+        </ul>
+    </main>
+
+    <!-- Footer with navigation -->
+    <footer class="navbar fixed-bottom">
+        <a href="/search" class="nav-item nav-link active">Search</a>
+        <a href="/favorites" class="nav-item nav-link">Favorites</a>
+        <a href="/home" class="nav-item nav-link active">Home</a>
+        <a href="/sets" class="nav-item nav-link">The Sets</a>
+        <a href="/profile" class="nav-item nav-link">Profile</a>
+    </footer>
+
+    <!-- Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

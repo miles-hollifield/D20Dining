@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#290000">
+    <title>D20 Dining</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="apple-touch-startup-image" href="/images/splashScreen.png">
+    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js" type="module"></script>
+    <script src="./js/home.js" type="module"></script>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">
+                <!-- <span class="d20-brand">D2</span> -->
+                <img src="./images/d20-dice.png" alt="D20 Dining logo" class="navbar-logo">
+            </a>
+        
+            <!-- Dropdown for selecting set -->
+            <div class="custom-select-wrapper">
+                <select class="custom-select">
+                    <option>Select Set</option>
+                </select>
+            </div>
+            
+            
+            <!-- Settings icon -->
+            <button class="settings-btn" aria-label="Settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="./images/settings-icon.png" alt="Settings" class="settings-icon">
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button" id="logoutButton">Logout</button>
+                <button class="dropdown-item" type="button" id="clear-data">Clear All Data</button>
+              </div>
+        </nav>           
+    </header>
+
+    <main role="main" class="container">
+        <!-- Dice and number container -->
+        <div class="dice-container">
+            <img src="./images/d20-dice.png" alt="20-sided dice" class="dice-image">
+            <div id="roll-number-container">
+                <h1 id="roll-number">0</h1>
+            </div>
+        </div>
+    
+        <!-- Restaurant information container -->
+        <div id="restaurant-display" class="restaurant-info">
+            <h5 id="restaurant-name">Roll to see where you're dining!</h5>
+            <a href="" id="restaurant-website">What will it be?</a>
+        </div>
+        
+        <button class="btn btn-danger btn-lg roll-btn">Roll</button>
+    </main>
+    
+
+    <!-- Footer with navigation -->
+    <footer class="navbar fixed-bottom">
+        <a href="/search" class="nav-item nav-link active">Search</a>
+        <a href="/favorites" class="nav-item nav-link">Favorites</a>
+        <a href="/home" class="nav-item nav-link active">Home</a>
+        <a href="/sets" class="nav-item nav-link">The Sets</a>
+        <a href="/profile" class="nav-item nav-link">Profile</a>
+    </footer>
+
+    <!-- Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

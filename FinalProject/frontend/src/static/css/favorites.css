@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #290000;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Header Section */
+
+.favorites-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid #f7ce65;
+    color: #f7ce65;
+}
+
+.favorites-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.edit-btn {
+    background: none;
+    border: none;
+    color: #f7ce65;
+    padding: 0;
+    font-size: 32px;
+    width: 24px;
+    margin-bottom: 15px;
+}
+
+.edit-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.edit-btn-placeholder {
+    width: 24px;
+    height: 24px;
+    visibility: hidden;
+}
+
+/* Main Section */
+
+.main-content {
+    padding-bottom: 60px;
+}
+
+.favorites-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-item {
+    display: flex;
+    align-items: center;
+    background: #290000;
+    padding: 10px;
+    border-bottom: 1px solid #f7ce65;
+}
+
+.restaurant-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.restaurant-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.restaurant-info p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.add-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #f7ce65;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.actions-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    justify-content: center; 
+}
+
+.btn-custom,
+.custom-select {
+    padding: 7px 16px;
+    border-radius: 4px;
+    margin: 5px 0; 
+    flex-grow: 1; 
+    max-width: 180px; 
+}
+
+.btn-custom {
+    background-color: #f7ce65; 
+    white-space: nowrap;
+    color: #290000;
+    border: none;
+    padding: 7px 16px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #ffc107; 
+}
+
+.custom-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    margin: 5px;
+    width: 180px;
+}
+
+.set-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.custom-select, .btn {
+    flex-grow: 1;
+}
+
+.btn-custom {
+    min-width: 100px;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #290000;
+    border-top: 2px solid #f7ce65;
+}
+  
+.nav-item {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Reduce the font size on smaller screens for buttons and selects */
+@media (max-width: 576px) {
+    .btn-custom,
+    .custom-select {
+        font-size: 0.8rem; 
+        padding: 5px 12px; 
+    }
+}
+
+/* Adjust flex layout on smaller screens */
+@media (max-width: 768px) {
+    .actions-container {
+        flex-direction: row; 
+    }
+    .btn-custom,
+    .custom-select {
+        width: 100%; 
+        max-width: none; 
+    }
+}

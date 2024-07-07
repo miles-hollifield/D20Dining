@@ -1,0 +1,28 @@
+{
+    "data": [
+      {
+        "address": {
+          "city": "Brooklyn",
+          "formatted": "547 Kings Highway Brooklyn, NY 11223",
+          "postal_code": "11223",
+          "state": "NY",
+          "street": "547 Kings Highway"
+        },
+        "cuisines": [
+          "French"
+        ],
+        "geo": {
+          "lat": 40.60476,
+          "lon": -73.96931
+        },
+        "hours": "",
+        "last_updated": "2020-11-18T13:53:46.307Z",
+        "menus": [],
+        "price_range": "$$$",
+        "restaurant_id": 4060476073969310,
+        "restaurant_name": "Dolce Vita",
+        "restaurant_phone": "(718) 376-8800",
+        "restaurant_website": ""
+      }
+    ]
+  }

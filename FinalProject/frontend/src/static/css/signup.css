@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Rosario', sans-serif;
+}
+
+body {
+    background-image: url('../images/parchment-paper.jpg');
+    background-position: center;
+}
+
+/* Signup container */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Title styles */
+.signup-title {
+    color: #930c10;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+/* Form styles */
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Label styles */
+.signup-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #930c10;
+}
+
+/* Input field styles */
+.signup-form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #930c10;
+    background-color: transparent;
+    color: #930c10;
+    font-size: 1rem;
+}
+
+/* Sign up button styles */
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #930c10;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Link to login page */
+.login-link {
+    color: #930c10;
+}
+
+.login-link a {
+    color: #930c10;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signup-title {
+        font-size: 2rem; /* Smaller title on mobile devices */
+    }
+
+    .signup-form input {
+        font-size: 0.9rem; /* Smaller font size for input fields on mobile devices */
+    }
+
+    .signup-button {
+        font-size: 1rem; /* Smaller button on mobile devices */
+    }
+}

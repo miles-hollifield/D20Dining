@@ -1,0 +1,228 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/parchment-paper.jpg');
+    /* background-color: #f7dea0; */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar-brand {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.custom-select {
+    border: 1px solid #290000;
+    border-radius: 5px;
+    height: 40px; 
+    appearance: none; 
+    background-color: #290000;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}   
+
+.custom-select-wrapper:after {
+    content: '\25BC'; /* Unicode for downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white;
+}
+
+.custom-select:hover {
+    background-color: #3f1b1b;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.settings-icon {
+    width: 40px; 
+    height: 40px; 
+    color: #290000;
+    transition: 0.2s;
+}
+
+.settings-icon:hover {
+    transform: rotate(20deg);
+    transition: 0.5s;
+}
+
+.settings-icon:active {
+    transform: rotate(35deg);
+    transition: 0.1s;
+}
+
+.settings-btn:focus {
+  outline: none;
+}
+
+.dropdown-menu-right {
+    margin-top: -10px;
+}
+
+/* Styles for the settings dropdown */
+.dropdown-menu {
+    border-radius: 5px;
+    background-color: #290000; 
+    color: white;
+    font-size: 1rem; 
+    margin: 0;
+    padding: 0;
+}
+
+#logoutButton {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    display: block; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: white; 
+}
+
+#clear-data {
+    border: 1px solid #fff;
+    display: block; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: white; 
+}
+
+.dropdown-menu button:hover {
+    background-color: #3f1b1b; /* Slightly lighter on hover */
+}
+
+
+/* Main container */
+.container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 80vh; 
+    text-align: center; 
+}
+
+/* Dice and number container */
+.dice-container {
+    position: relative;
+    width: 30vh; 
+    height: 30vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.dice-image {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto; 
+}
+
+#roll-number-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+#roll-number {
+    font-size: 6vh; 
+    margin: 0;
+}
+
+/* Restaurant information container */
+#restaurant-display {
+    margin-top: 20px; 
+}
+
+#restaurant-name, #restaurant-website {
+    margin: 5px 0; 
+}
+
+.roll-btn {
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #290000;
+    border-top: 1px solid #ddd;
+}
+  
+.nav-item {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styles */
+
+/* @media (max-width: 768px) {
+
+    .dice-container span {
+        font-size: 1rem; 
+    }
+
+    .roll-btn {
+        font-size: 1rem; 
+        padding: 5px 10px; 
+        width: 150px;
+        
+    }
+}
+
+@media (min-width: 769px) {
+
+    .container {
+        margin-top: 50px;
+    }
+    
+    .dice-container span {
+        font-size: 1rem; 
+    }
+
+    .roll-btn {
+        font-size: 1rem; 
+        padding: 5px 10px; 
+        width: 150px;
+        
+    }
+} */

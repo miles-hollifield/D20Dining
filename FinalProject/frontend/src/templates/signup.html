@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D20 Dining - Sign Up</title>
+    <!-- PWA Setup -->
+    <meta name="theme-color" content="#290000">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="/images/splashScreen.png">
+    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+
+<div class="signup-container">
+    <h1 class="signup-title">Sign up</h1>
+    
+    <form class="signup-form" enctype="multipart/form-data">
+        <p id="errorBox"></p>
+        <label for="first-name" class="signup-label">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+        
+        <label for="last-name" class="signup-label">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+        
+        <label for="username" class="signup-label">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username">
+
+        <label for="email" class="signup-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+        
+        <label for="password" class="signup-label">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        
+        <label for="confirm-password" class="signup-label">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+        
+        <button type="submit" id="submitButton" class="signup-button">Sign Up</button>
+    </form>
+    
+    <div class="login-link">
+        Already have an account? <a href="/">Log in here</a>
+    </div>
+</div>
+
+<script src="./js/signup.js" type="module"></script>
+</body>
+</html>

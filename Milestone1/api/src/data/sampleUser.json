@@ -1,0 +1,34 @@
+{
+    "1": {
+        "userId": 1,
+        "username": "string",
+        "first": "string",
+        "last": "string",
+        "password": "string",
+        "email": "string",
+        "followers": [
+            2, 
+            3
+        ], 
+        "following": [
+            2
+        ],
+        "profilePicture": "String"
+    }, "2": {
+        "userId": 2,
+        "username": "string2",
+        "first": "string2",
+        "last": "string2",
+        "password": "string2",
+        "email": "string2",
+        "followers": [
+            1
+        ], 
+        "following": [
+            1
+        ],
+        "profilePicture": "String2"
+    }
+
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D20 Dining - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <img src="./images/d20-dice.png" alt="D20 Dining logo" class="login-logo">
+    <h1 class="login-title">d20 Dining</h1>
+    
+    <form class="login-form" method="post" action="/api/login" enctype="multipart/form-data">
+        <label for="username" class="login-label">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username/Email">
+        
+        <label for="password" class="login-label">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        
+        <button type="submit" class="login-button">Log In</button>
+    </form>
+    
+    <div class="signup-link">
+        Don't have an account? <a href="/signup">Join here</a>
+    </div>
+</div>
+
+</body>
+</html>

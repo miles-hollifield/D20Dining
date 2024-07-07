@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D20 Dining - Login</title>
+    <!-- PWA Setup -->
+    <meta name="theme-color" content="#290000">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-startup-image" href="/images/splashScreen.png">
+    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <img src="./images/d20-dice.png" alt="D20 Dining logo" class="login-logo">
+    <h1 class="login-title">d20 Dining</h1>
+    
+    <p id="errorBox"></p>
+
+    <form class="login-form" enctype="multipart/form-data">
+        <label for="username" class="login-label">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username/Email">
+        
+        <label for="password" class="login-label">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        
+        <button type="submit" id="submitButton" class="login-button">Log In</button>
+    </form>
+    
+    <div class="signup-link">
+        Don't have an account? <a href="/signup">Join here</a>
+    </div>
+</div>
+<script src="./js/login.js" type="module"></script>
+</body>
+</html>

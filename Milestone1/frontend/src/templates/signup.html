@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D20 Dining - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+
+<div class="signup-container">
+    <h1 class="signup-title">Sign up</h1>
+    
+    <form class="signup-form" method="post" action="/api/createAccount" enctype="multipart/form-data">
+        <label for="first-name" class="signup-label">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+        
+        <label for="last-name" class="signup-label">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+        
+        <label for="username-email" class="signup-label">Username/Email</label>
+        <input type="text" id="username-email" name="username-email" placeholder="Username/Email">
+        
+        <label for="password" class="signup-label">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        
+        <label for="confirm-password" class="signup-label">Re-enter Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter Password">
+        
+        <button type="submit" class="signup-button">Sign Up</button>
+    </form>
+    
+    <div class="login-link">
+        Already have an account? <a href="/login">Log in here</a>
+    </div>
+</div>
+
+</body>
+</html>

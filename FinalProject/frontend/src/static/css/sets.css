@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #290000;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Header Section */
+.sets-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid #f7ce65;
+    color: #f7ce65;
+}
+
+.sets-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Main Section */
+.main-content {
+    padding-bottom: 60px;
+}
+
+.sets-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.set-item {
+    align-items: center;
+    background: #290000;
+    padding: 10px;
+    border-bottom: 1px solid #f7ce65;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.restaurants-list {
+    display: block; 
+    margin-top: 10px; 
+    padding-left: 20px; 
+    list-style-type: decimal; 
+}
+
+
+.set-icon {
+    margin-right: 0.5rem;
+}
+
+.set-title {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.set-title:hover {
+    color: #ffc107;
+}
+
+.edit-set-btn {
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    background-color: #f7ce65;
+    color: #290000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.edit-set-btn:hover {
+    background-color: #ffc107; 
+}
+
+#addSetBtn {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #f7ce65;
+    color: #290000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#addSetBtn:hover {
+    background-color: #ffc107; 
+}
+
+/* Footer Section */
+footer {
+    background-color: #290000;
+    border-top: 2px solid #f7ce65;
+}
+  
+.nav-item {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+}

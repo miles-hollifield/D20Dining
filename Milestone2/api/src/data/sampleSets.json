@@ -1,0 +1,32 @@
+{
+    "1": {
+        "sets": [
+            {
+                "setName": "string",
+                "restaraunts": [
+                    "String"
+                ]
+            }
+        ],
+       
+        "favorites": [
+            "String",
+            "String"
+        ] 
+    }, 
+    "2": {
+        "sets": [
+            {
+                "setName": "asheville",
+                "restaraunts": [
+                    "Rocky's"
+                ]
+            }
+        ],
+       
+        "favorites": [
+            "Rocky's HOT chicken",
+            "String"
+        ] 
+    }
+}
